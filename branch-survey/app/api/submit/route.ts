@@ -67,7 +67,7 @@ export async function POST(request: NextRequest) {
         const filename = `${branchName}_${submissionNo}.xlsx`;
 
         // 엑셀 파일을 응답으로 반환
-        return new NextResponse(excelBuffer, {
+        return new NextResponse(new Uint8Array(excelBuffer), {
             headers: {
                 'Content-Type': 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
                 'Content-Disposition': `attachment; filename="${encodeURIComponent(filename)}"`,
