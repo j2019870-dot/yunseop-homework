@@ -27,7 +27,7 @@ export async function GET(request: NextRequest) {
             const userEmail = decodedToken.email || '';
             const defaultUser = {
                 email: userEmail,
-                role: 'user',
+                role: 'user' as const,
                 branchName: '',
                 displayName: decodedToken.name || '',
             };
