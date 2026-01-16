@@ -36,7 +36,7 @@ function initializeFirebaseAdmin() {
 if (!admin.apps.length) {
     initializeFirebaseAdmin();
 } else {
-    adminApp = admin.apps[0];
+    adminApp = admin.apps[0] as admin.app.App;
 }
 
 // Firestore와 Auth 인스턴스 export
