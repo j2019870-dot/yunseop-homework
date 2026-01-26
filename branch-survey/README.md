@@ -51,6 +51,7 @@ GCP 기반 설문조사 관리 웹 애플리케이션입니다. Next.js, Firebas
 ```bash
 # 프로젝트 디렉토리로 이동
 cd branch-survey
+# Branch Survey (Deployed at: 2026-01-26 20:40)
 
 # 의존성 설치
 npm install

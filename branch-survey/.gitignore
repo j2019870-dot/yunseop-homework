@@ -25,9 +25,16 @@ yarn-error.log*
 # local env files
 .env*.local
 .env
+# service accounts
 service-account.json
-symmetric-index-482009-v8-firebase-adminsdk-fbsvc-d22053182c.json
-symmetric-index-482009-v8-firebase-adminsdk-fbsvc-d22053182c.json
+service-account-key.json
+*.json
+!package.json
+!tsconfig.json
+!firebase.json
+!.firebaserc
+!postcss.config.js
+!tailwind.config.js
 
 # vercel
 .vercel
